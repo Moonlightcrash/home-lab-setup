@@ -1,0 +1,9 @@
+---
+- name: YUM upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+
+- name: Reboot after YUM Dist-Upgrade
+  reboot:

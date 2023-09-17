@@ -1,0 +1,9 @@
+---
+- name: APT Dist-Upgrade
+  apt:
+    upgrade: dist
+    autoremove: true
+    dpkg_options: force-confold,force-confdef
+
+- name: Reboot after APT upgrade
+  reboot:

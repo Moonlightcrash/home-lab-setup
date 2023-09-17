@@ -1,0 +1,10 @@
+---
+- name: APT upgrade
+  when:
+  - ansible_os_family == "Debian"
+  include_tasks: apt.yml
+
+- name: YUM upgrade
+  when:
+  - ansible_os_family == "RedHat"
+  include_tasks: yum.yml
