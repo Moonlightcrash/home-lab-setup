@@ -6,6 +6,7 @@
     - nano
     - wget
     - htop
+    - git
   when: ansible_os_family == "RedHat"
 
 - name: Install required packages
@@ -15,4 +16,5 @@
     - nano
     - wget
     - htop
+    - git
   when: ansible_os_family == "Debian"
