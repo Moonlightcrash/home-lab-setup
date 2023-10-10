@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
     sed -i 's/^#* *\(PasswordAuthentication\)\(.*\)$/\1 yes/' /etc/ssh/sshd_config
     systemctl restart sshd.service
     echo -e "vagrant\nvagrant" | (passwd vagrant)
-    echo -e "1488\n1488" | (passwd root)
+    echo -e "1337\n1337" | (passwd root)
   SHELL
 
   config.vm.define "vm-node-1" do |vmn1|
