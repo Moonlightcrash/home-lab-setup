@@ -1,9 +1,12 @@
 [all]
 node1 ansible_host=raspberry-node-1.local ip=10.10.11.50 
 node2 ansible_host=raspberry-node-2.local ip=10.10.11.51
-# node3 ansible_host=vm.local  # ip=10.3.0.3 
+node3 ansible_host=vm-node-1.local        ip=10.10.11.52
+node4 ansible_host=vm-node-2.local        ip=10.10.11.53
 
 [vm]
+node3
+node4
 
 [rpi-zero]
 node1

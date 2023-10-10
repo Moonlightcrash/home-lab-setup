@@ -1,4 +1,6 @@
 env/
+venv/
 .vscode/
 ansible.log
 .idea/
+.vagrant
